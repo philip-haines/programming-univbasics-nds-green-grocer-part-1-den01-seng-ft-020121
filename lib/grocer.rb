@@ -14,9 +14,15 @@ end
 
 def consolidate_cart(cart)
   new_array = []
+  i = 0
+  while i < cart.length 
+    new_cart_item = find_item_by_name_in_collection(cart[i], new_array)
+    
+    i += 1
+  end
   count = 1
   
-
+# return array of hashes {:item => name of item, :price => price :clearence => clearence status :count => numer of item in cart}
 end
 
 
