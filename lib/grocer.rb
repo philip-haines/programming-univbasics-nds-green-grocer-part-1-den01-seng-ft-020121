@@ -27,12 +27,14 @@ def consolidate_cart(cart)
         [:clearance] => cart[i][:clearance],
         [:count] => 1
       }
+      
+      new_array << new_cart_item
     end
     
     i += 1
   end
   
-# return array of hashes {:item => name of item, :price => price :clearence => clearence status :count => numer of item in cart}
+  return new_array
 end
 
 
