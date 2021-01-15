@@ -14,23 +14,8 @@ end
 
 def consolidate_cart(cart)
   new_array = []
-  count = 0
+  count = 1
   
-  i = 0
-  while i < cart.length
-    name = cart[i][:item]
-    
-    if cart[i] == cart[i]
-      count += 1
-    end
-    # binding.pry
-    cart[i][:count] = count
-    new_array << cart[i]
-    
-     i += 1
-  end
- # binding.pry
-  return new_array
 
 end
 
